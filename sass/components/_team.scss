@@ -1,0 +1,76 @@
+.team {
+  background-color: var(--secondary-background-color);
+
+  &__header {
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  &__list {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+  }
+  &__item {
+    min-width: 270px;
+    flex-basis: calc((100% - 120px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__member {
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+  &__post {
+    margin-bottom: 16px;
+
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+  }
+  &__thumb {
+    padding: 30px 32px;
+  }
+}
+
+.social__list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+.social__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  outline: none;
+  fill: var(--normal-icon-color);
+  transition: background-color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-background-color);
+    background-color: var(--primary-accent-color);
+  }
+}

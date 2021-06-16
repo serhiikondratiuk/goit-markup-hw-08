@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-style: normal;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--primary-background-color);
+}
