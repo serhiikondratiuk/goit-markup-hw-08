@@ -1,27 +1,23 @@
 .hero {
-  max-width: 1600px;
+  max-width: 767px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   color: var(--primary-background-color);
   background-color: var(--footer-backgroung-color);
   background-image: linear-gradient(to right, var(--hero-gradient-start), var(--hero-gradiet-end)),
-    url(../images/herobgi.jpg);
+    url(../images/mob/herobgi.jpg);
   background-size: cover;
 
-  &__wrapper {
-    display: block;
-    width: 696px;
-    margin: 0 auto;
-  }
   &__title {
-    margin-bottom: 30px;
+    max-width: 360px;
+    margin: 0 auto 30px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-transform: uppercase;
     letter-spacing: 0.06em;
   }
@@ -45,6 +41,59 @@
     &:focus {
       background-color: var(--hero-button-hover-color);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, var(--hero-gradient-start), var(--hero-gradiet-end)),
+      url(../images/mob/herobgi@2x.jpg);
+  }
+}
+
+// 768px++
+@media screen and(min-width:768px) {
+  .hero {
+    background-image: linear-gradient(to right, var(--hero-gradient-start), var(--hero-gradiet-end)),
+      url(../images/tablet/bgi.jpg);
+  }
+  @media (min-resolution: 2ddpx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          var(--hero-gradient-start),
+          var(--hero-gradiet-end)
+        ),
+        url(../images/tablet/bgi@2x.jpg);
+    }
+  }
+}
+// 1200++
+@media screen and(min-width:1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, var(--hero-gradient-start), var(--hero-gradiet-end)),
+      url(../images/desktop/bgi.jpg);
+
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+      margin: 0 auto 30px;
+    }
+  }
+
+  @media (min-resolution: 2ddpx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          var(--hero-gradient-start),
+          var(--hero-gradiet-end)
+        ),
+        url(../images/desktop/bgi@2x.jpg);
     }
   }
 }
