@@ -2,9 +2,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  overflow-y: scroll;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
+  height: 609px;
   padding: 40px;
   border-radius: 4px;
   background-color: var(--primary-background-color);
@@ -28,5 +28,19 @@
     &:focus {
       fill: var(--primary-accent-color);
     }
+  }
+}
+// 0-1199px
+@media screen and(max-width:1199px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+// 1200px++
+@media screen and(min-width:1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
