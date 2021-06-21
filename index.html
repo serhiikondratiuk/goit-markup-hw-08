@@ -163,17 +163,35 @@
           <h2 class="occupations__header">Чем мы занимаемся</h2>
           <ul class="occupations__list">
             <li class="occupations__item">
-              <img src="./images/1.jpg" alt="Разработчик набирает код" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/desktop/1.jpg 1x, ./images/desktop/1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/desktop/1.jpg" alt="Разработчик набирает код" />
+              </picture>
               <h3 class="occupations__description">Десктопные приложения</h3>
             </li>
 
             <li class="occupations__item">
-              <img src="./images/2.jpg" alt="Разработка приложения" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/desktop/2.jpg 1x, ./images/desktop/2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/desktop/2.jpg" alt="Разработчик набирает код" />
+              </picture>
               <h3 class="occupations__description">Мобильные приложения</h3>
             </li>
 
             <li class="occupations__item">
-              <img src="./images/3.jpg" alt="Дизайнер с планшетом" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/desktop/3.jpg 1x, ./images/desktop/3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/desktop/3.jpg" alt="Разработчик набирает код" />
+              </picture>
               <h3 class="occupations__description">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -185,7 +203,21 @@
           <h2 class="team__header">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/mob/demyanenko.jpg 1x, ./images/mob/demyanenko@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./images/tablet/demyanenko.jpg 1x, ./images/tablet/demyanenko@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/desktop/demyanenko.jpg 1x, ./images/desktop/demyanenko@2x.jpg 2x"
+                />
+                <img src="#" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__member">Игорь Демьяненко</h3>
                 <p class="team__post" lang="en">Product Designer</p>
@@ -223,7 +255,21 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/repina.jpg" alt="Ольга Репина" width="270" height="260" />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/mob/repina.jpg 1x, ./images/mob/repina@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./images/tablet/repina.jpg 1x, ./images/tablet/repina@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/desktop/repina.jpg 1x, ./images/desktop/repina@2x.jpg 2x"
+                />
+                <img src="#" alt="Ольга Репина" />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__member">Ольга Репина</h3>
                 <p class="team__post" lang="en">Frontend Developer</p>
@@ -261,7 +307,21 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/tarasov.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/mob/tarasov.jpg 1x, ./images/mob/tarasov@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./images/tablet/tarasov.jpg 1x, ./images/tablet/tarasov@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/desktop/tarasov.jpg 1x, ./images/desktop/tarasov@2x.jpg 2x"
+                />
+                <img src="#" alt="Николай Тарасов" />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__member">Николай Тарасов</h3>
                 <p class="team__post" lang="en">Marketing</p>
@@ -299,7 +359,21 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/ermakov.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/mob/ermakov.jpg 1x, ./images/mob/ermakov@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./images/tablet/ermakov.jpg 1x, ./images/tablet/ermakov@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/desktop/ermakov.jpg 1x, ./images/desktop/ermakov@2x.jpg 2x"
+                />
+                <img src="#" alt="Михаил Ермаков" />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__member">Михаил Ермаков</h3>
                 <p class="team__post" lang="en">UI Designer</p>

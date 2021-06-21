@@ -55,10 +55,11 @@
 // 768px++
 @media screen and(min-width:768px) {
   .hero {
+    max-width: 1199px;
     background-image: linear-gradient(to right, var(--hero-gradient-start), var(--hero-gradiet-end)),
       url(../images/tablet/bgi.jpg);
   }
-  @media (min-resolution: 2ddpx) {
+  @media (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           to right,
@@ -86,7 +87,7 @@
     }
   }
 
-  @media (min-resolution: 2ddpx) {
+  @media (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           to right,
