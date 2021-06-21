@@ -5,7 +5,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   letter-spacing: 0.03em;
-  background-color: var(--footer-backgroung-color);
+  background-color: var(--footer-background-color);
 
   &-content {
     align-items: baseline;
@@ -156,7 +156,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: var(--primary-background-color);
-  background-color: var(--footer-backgroung-color);
+  background-color: var(--footer-background-color);
   transition: filter var(--transition-duration) var(--transition-timing-function);
   cursor: pointer;
 
