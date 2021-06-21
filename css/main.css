@@ -6,7 +6,7 @@
   --secondary-background-color: #f5f4fa;
   --primary-accent-color: #2196f3;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
-  --footer-backgroung-color: #2f303a;
+  --footer-background-color: #2f303a;
   --hero-button-hover-color: #188ce8;
   --gallery-cards-border-color: #eeeeee;
   --logo-secondary-color: #000000;
@@ -406,7 +406,7 @@ body {
   padding-bottom: 118px;
   text-align: center;
   color: var(--primary-background-color);
-  background-color: var(--footer-backgroung-color);
+  background-color: var(--footer-background-color);
   background-image: linear-gradient(to right, var(--hero-gradient-start), var(--hero-gradient-end)), url(../images/mob/herobgi.jpg);
   background-size: cover;
 }
@@ -912,7 +912,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   letter-spacing: 0.03em;
-  background-color: var(--footer-backgroung-color);
+  background-color: var(--footer-background-color);
 }
 
 .footer-content {
@@ -952,6 +952,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-content {
     display: flex;
+    text-align: start;
   }
   .footer-form-wrapper {
     margin-left: auto;
@@ -1061,7 +1062,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: var(--primary-background-color);
-  background-color: var(--footer-backgroung-color);
+  background-color: var(--footer-background-color);
   transition: filter var(--transition-duration) var(--transition-timing-function);
   cursor: pointer;
 }
