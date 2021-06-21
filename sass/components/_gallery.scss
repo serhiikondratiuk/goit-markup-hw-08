@@ -1,11 +1,7 @@
 .gallery {
   padding-left: 0;
   list-style: none;
-  margin: -15px;
 
-  &__item {
-    margin: 15px;
-  }
   &__item-header {
     margin-bottom: 4px;
     font-size: 18px;
@@ -30,14 +26,22 @@
     border-left: 1px solid var(--gallery-cards-border-color);
   }
 }
-
+@media screen and(max-width:767px) {
+  .gallery {
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
 // 768px++
 @media screen and(min-width:768px) {
   .gallery {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
 
     &__item {
+      margin: 15px;
       max-width: 370px;
       flex-basis: calc((100% - 60px) / 2);
     }
